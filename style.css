@@ -1,0 +1,24 @@
+.accordion-header {
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transition: transform 0.3s ease;
+}
+
+.accordion-arrow.active {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.accordion-content {
+  display: none;
+}
